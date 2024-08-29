@@ -8,26 +8,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp2.Models;
+using Ejercicio2.Models;
 
-namespace WindowsFormsApp1
+namespace Ejercicio2
 {
-    public partial class Form1 : Form
+    public partial class FormPrincipal : Form
     {
         ArrayList lista = new ArrayList();
-
-   
-        public Form1()
+        public FormPrincipal()
         {
             InitializeComponent();
 
-            lista.Add(new Persona(2343433, "Ruben"));
-            lista.Add(new Persona(2343422, "Mirta"));
+            lista.Add(new Persona(4343433, "Julia"));
+            lista.Add(new Persona(2343422, "Estefanía"));
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnVerAltaPersona_Click(object sender, EventArgs e)
         {
-            int dni = Convert.ToInt32(textBox1.Text);
+            int dni = Convert.ToInt32(tbDNIBusqueda.Text);
 
             lista.Sort();
             int idx = lista.BinarySearch(new Persona(dni));
@@ -49,18 +47,7 @@ namespace WindowsFormsApp1
                 p = lista[idx] as Persona;
             }
 
-            textBox2.Text = p.ToString();
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            tvVer.Text = p.ToString();
         }
     }
 }
