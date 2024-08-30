@@ -244,7 +244,7 @@
 <XPD:ATTR name="Text" type="string">Figura</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="dCLMm7FUbUqckRCAlEHxpwAA">
-<XPD:ATTR name="Text" type="string">&lt;&lt;extend IComparable, abstract&gt;&gt;</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">&lt;&lt;implement IComparable, abstract&gt;&gt;</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="xRgV1GAg9kaDXXooTT7OjAAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -551,7 +551,7 @@
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[7]" type="UMLClass" guid="+A3dYvS/U02SuPed3v86mAAA">
 <XPD:ATTR name="Name" type="string">Figura</XPD:ATTR>
-<XPD:ATTR name="StereotypeName" type="string">extend IComparable, abstract</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">implement IComparable, abstract</XPD:ATTR>
 <XPD:REF name="Namespace">4teuAVqyK0SIJwwx7F0vrgAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">+ujzzHwc/Ee8wWC7rgD6RwAA</XPD:REF>

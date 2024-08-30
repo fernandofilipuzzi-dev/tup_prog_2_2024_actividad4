@@ -68,7 +68,7 @@
 <XPD:ATTR name="Text" type="string">Rectangulo</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="b/XURwQ4TEyqDevWfa4meQAA">
-<XPD:ATTR name="Text" type="string">&lt;&lt;extend IComparable&gt;&gt;</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">&lt;&lt;implement IComparable&gt;&gt;</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="z5eY2dObrUWkQ0NPqL11rgAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -99,7 +99,7 @@
 <XPD:ATTR name="Text" type="string">Circulo</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="XFjvhwVPh0mdMak3+lfQTAAA">
-<XPD:ATTR name="Text" type="string">&lt;&lt;extend IComparable&gt;&gt;</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">&lt;&lt;implement IComparable&gt;&gt;</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="We6J8UcZLkOJtr2qlaWDmAAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -295,7 +295,7 @@
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[1]" type="UMLClass" guid="fyi6HFC8Ike6BBRIzQPxiAAA">
 <XPD:ATTR name="Name" type="string">Rectangulo</XPD:ATTR>
-<XPD:ATTR name="StereotypeName" type="string">extend IComparable</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">implement IComparable</XPD:ATTR>
 <XPD:REF name="Namespace">4teuAVqyK0SIJwwx7F0vrgAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">rVrjifWdOkm8CuWR6GdbEAAA</XPD:REF>
@@ -384,7 +384,7 @@
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[2]" type="UMLClass" guid="SeMRkNdjJkyfrI4vKXi6zAAA">
 <XPD:ATTR name="Name" type="string">Circulo</XPD:ATTR>
-<XPD:ATTR name="StereotypeName" type="string">extend IComparable</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">implement IComparable</XPD:ATTR>
 <XPD:REF name="Namespace">4teuAVqyK0SIJwwx7F0vrgAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">VsQqZRy89kGwbwdVa6OiFwAA</XPD:REF>

@@ -68,7 +68,7 @@
 <XPD:ATTR name="Text" type="string">Rectangulo</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="b/XURwQ4TEyqDevWfa4meQAA">
-<XPD:ATTR name="Text" type="string">&lt;&lt;implement IComparable&gt;&gt;</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">&lt;&lt;extend IComparable&gt;&gt;</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="z5eY2dObrUWkQ0NPqL11rgAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -99,7 +99,7 @@
 <XPD:ATTR name="Text" type="string">Circulo</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="XFjvhwVPh0mdMak3+lfQTAAA">
-<XPD:ATTR name="Text" type="string">&lt;&lt;implement IComparable&gt;&gt;</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">&lt;&lt;extend IComparable&gt;&gt;</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="PropertyLabel" type="LabelView" guid="We6J8UcZLkOJtr2qlaWDmAAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -177,7 +177,7 @@
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">340</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">60</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">48</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">149</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">82</XPD:ATTR>
 <XPD:REF name="Model">3OsQrxJtAEqJ0ZEMeSUd5wAA</XPD:REF>
@@ -207,7 +207,7 @@
 <XPD:OBJ name="OwnedViews[5]" type="UMLRealizationView" guid="o9uT0E1WQUCeQe+/GNp3QQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">361,172;384,141</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">357,172;386,129</XPD:ATTR>
 <XPD:REF name="Model">be3dt0e8G0SRkRJyP5myVQAA</XPD:REF>
 <XPD:REF name="Head">wMAsIFedS0qvPbLmEM4KnQAA</XPD:REF>
 <XPD:REF name="Tail">rVrjifWdOkm8CuWR6GdbEAAA</XPD:REF>
@@ -233,7 +233,7 @@
 <XPD:OBJ name="OwnedViews[6]" type="UMLRealizationView" guid="S2Lt31lJqEWHwX15NTIyXAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">468,172;445,141</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">472,172;442,129</XPD:ATTR>
 <XPD:REF name="Model">JFg2mRv4pEiZvdn3ScmPsgAA</XPD:REF>
 <XPD:REF name="Head">wMAsIFedS0qvPbLmEM4KnQAA</XPD:REF>
 <XPD:REF name="Tail">VsQqZRy89kGwbwdVa6OiFwAA</XPD:REF>
@@ -295,7 +295,7 @@
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[1]" type="UMLClass" guid="fyi6HFC8Ike6BBRIzQPxiAAA">
 <XPD:ATTR name="Name" type="string">Rectangulo</XPD:ATTR>
-<XPD:ATTR name="StereotypeName" type="string">implement IComparable</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">extend IComparable</XPD:ATTR>
 <XPD:REF name="Namespace">4teuAVqyK0SIJwwx7F0vrgAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">rVrjifWdOkm8CuWR6GdbEAAA</XPD:REF>
@@ -391,7 +391,7 @@
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[3]" type="UMLClass" guid="SeMRkNdjJkyfrI4vKXi6zAAA">
 <XPD:ATTR name="Name" type="string">Circulo</XPD:ATTR>
-<XPD:ATTR name="StereotypeName" type="string">implement IComparable</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">extend IComparable</XPD:ATTR>
 <XPD:REF name="Namespace">4teuAVqyK0SIJwwx7F0vrgAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">VsQqZRy89kGwbwdVa6OiFwAA</XPD:REF>
