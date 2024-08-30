@@ -2,7 +2,7 @@
 
 namespace Ejercicio3.Models
 {
-    class Rectangulo:IFigura, IComparable
+    class Rectangulo: IFigura, IComparable
     {
         public double Largo { get; private set; }
         public double Ancho { get; private set; }
@@ -37,5 +37,6 @@ namespace Ejercicio3.Models
             }
             return 1;
         }
+
     }
 }

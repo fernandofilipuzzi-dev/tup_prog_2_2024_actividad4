@@ -26,7 +26,7 @@ namespace Ejercicio3.Models
             return $"{"Circulo",15} - {CalcularArea(),10:f2} - {CalcularPerimetro(),10:f2}";
         }
 
-        public int CompareTo(object obj) 
+        public int CompareTo(object obj)
         {
             IFigura fig = obj as IFigura;
             if (fig != null)
@@ -35,5 +35,6 @@ namespace Ejercicio3.Models
             }
             return 1;
         }
+
     }
 }

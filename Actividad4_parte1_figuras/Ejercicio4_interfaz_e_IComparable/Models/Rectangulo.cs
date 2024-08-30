@@ -1,6 +1,6 @@
 ﻿namespace Ejercicio4.Models
 {
-    class Rectangulo:Figura
+    public class Rectangulo:Figura
     {
         public double Largo { get; private set; }
         public double Ancho { get; private set; }

@@ -2,20 +2,20 @@
 
 namespace Ejercicio4.Models
 {
-    abstract class Figura:IFigura, IComparable
+    abstract public class Figura:IFigura, IComparable
     {
         abstract public double CalcularArea();
+
         abstract public double CalcularPerimetro();
 
         public int CompareTo(object obj)
         {
-            int result = 1;
-            if (obj != null && obj is IFigura)
+            IFigura fig = obj as IFigura;
+            if (fig != null)
             {
-                IFigura fig1 = (IFigura)obj;
-                result = this.CalcularArea().CompareTo(fig1.CalcularArea());
+                return this.CalcularArea().CompareTo(fig.CalcularArea());
             }
-            return result;
+            return 1;
         }
     }
 }
