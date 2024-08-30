@@ -16,9 +16,14 @@ namespace Ejercicio1.Models
             return Math.PI * Math.Pow(Radio, 2);
         }
 
+        public double CalcularPerimetro()
+        {
+            return 2* Math.PI * Radio;
+        }
+
         public override string ToString()
         {
-            return $"Circulo {CalcularArea().ToString("0.00")}";
+            return $"Circulo - {CalcularArea():f2} - {CalcularPerimetro():f2}";
         }
     }
 }

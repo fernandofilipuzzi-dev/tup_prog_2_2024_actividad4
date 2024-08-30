@@ -16,11 +16,13 @@
             return Largo*Ancho;
         }
 
+        override public double CalcularPerimetro()
+        {
+            return 2 * (Largo + Ancho);
+        }
         override public string ToString()
         {
             return "Rectangulo";
         }
-
-
     }
 }

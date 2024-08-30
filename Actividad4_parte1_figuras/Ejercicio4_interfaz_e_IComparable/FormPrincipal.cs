@@ -16,24 +16,24 @@ namespace Ejercicio4
         {
             ArrayList misFiguras =new ArrayList();
             misFiguras.AddRange( new IFigura[]{
-                           new Circulo(8), new Circulo(3), new Circulo(4),
-                           new Rectangulo(30,10), new Rectangulo(4,8), new Rectangulo(12,10),
-                           new Cuadrado(5), new Cuadrado(4), new Cuadrado(12)
-                               });
+                new Circulo(8), new Circulo(3), new Circulo(4),
+                new Rectangulo(30,10), new Rectangulo(4,8), new Rectangulo(12,10),
+                new Cuadrado(5), new Cuadrado(4), new Cuadrado(12)
+            });
 
-            lbResultados.Items.Add("lista sin ordenar.");
+            lbxVer.Items.Add("Lista sin ordenar.");
+            lbxVer.Items.Add($"{"Figura",10:f2} {"Área",10:f2} {"Perímetro",10:f2}");
             foreach (IFigura fig in misFiguras)
             {
-                lbResultados.Items.Add("   "+fig.ToString() + " " +
-                                            fig.CalcularArea().ToString("0.00"));
+                lbxVer.Items.Add($"{fig.ToString(),10:f2} {fig.CalcularArea(),10:f2}  {fig.CalcularPerimetro(),10:f2}");
             }
 
             misFiguras.Sort();
-            lbResultados.Items.Add("lista ordenada por area.");
+            lbxVer.Items.Add(" ");
+            lbxVer.Items.Add("Lista ordenada por area.");
             foreach (IFigura fig in misFiguras)
             {
-                lbResultados.Items.Add("   "+fig.ToString() + ": " +
-                                        fig.CalcularArea().ToString("0.00"));
+                lbxVer.Items.Add($"{fig.ToString(),10:f2} {fig.CalcularArea(),10:f2}  {fig.CalcularPerimetro(),10:f2}");
             }
         }
     }

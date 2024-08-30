@@ -17,10 +17,13 @@ namespace Ejercicio2.Models
         {
             return Largo*Ancho;
         }
-
-        public override string ToString()
+        override public double CalcularPerimetro()
         {
-            return $"{"Rectángulo",10} {CalcularArea().ToString("0.00")}";
+            return 2 * (Largo + Ancho);
+        }
+        override public string ToString()
+        {
+            return $"Rectangulo - {CalcularArea():f2} - {CalcularPerimetro():f2}";
         }
     }
 }

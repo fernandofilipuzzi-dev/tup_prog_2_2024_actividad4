@@ -19,9 +19,11 @@ namespace Ejercicio2
                                            new Cuadrado(5),
                                             new Rectangulo(5,1)
                                                };
+
+            lbxVer.Items.Add($"{"Figura",10:f2} {"Área",10:f2} {"Perímetro",10:f2}");
             foreach (Figura fig in misFiguras)
             {
-                listBox1.Items.Add(fig);
+                lbxVer.Items.Add(fig);
             }
         }
     }

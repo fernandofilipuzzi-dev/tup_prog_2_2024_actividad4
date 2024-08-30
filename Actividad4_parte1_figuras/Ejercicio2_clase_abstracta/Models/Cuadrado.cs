@@ -1,5 +1,7 @@
 ﻿
 
+using System;
+
 namespace Ejercicio2.Models
 {
     class Cuadrado : Rectangulo
@@ -10,7 +12,7 @@ namespace Ejercicio2.Models
 
         public override string ToString()
         {
-            return $"{"Cuadrado",10}  {CalcularArea().ToString("0.00")}";
+            return $"Cuadrado- {CalcularArea():f2} - {CalcularPerimetro():f2}";
         }
     }
 }

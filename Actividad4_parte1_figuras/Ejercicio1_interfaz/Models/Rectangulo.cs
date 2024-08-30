@@ -16,10 +16,16 @@ namespace Ejercicio1.Models
         {
             return Largo*Ancho;
         }
+        public double CalcularPerimetro()
+        {
+            return 2 * (Largo + Ancho);
+        }
 
         public override string ToString()
         {
-            return $"Rectángulo {CalcularArea().ToString("0.00")}";
+            return $"Rectangulo - {CalcularArea():f2} - {CalcularPerimetro():f2}";
         }
+
+       
     }
 }

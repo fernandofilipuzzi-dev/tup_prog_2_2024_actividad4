@@ -13,7 +13,7 @@ namespace Ejercicio1.Models
 
         public override string ToString()
         {
-            return $"Cuadrado {CalcularArea().ToString("0.00")}";
+            return $"Cuadrado - {CalcularArea():f2} - {CalcularPerimetro():f2}";
         }
     }
 }

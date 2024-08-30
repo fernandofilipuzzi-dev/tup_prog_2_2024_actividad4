@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.btnPrueba = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbxVer = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnPrueba
             // 
-            this.btnPrueba.Location = new System.Drawing.Point(252, 118);
+            this.btnPrueba.Location = new System.Drawing.Point(355, 101);
             this.btnPrueba.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPrueba.Name = "btnPrueba";
             this.btnPrueba.Size = new System.Drawing.Size(112, 35);
@@ -43,24 +43,26 @@
             this.btnPrueba.UseVisualStyleBackColor = true;
             this.btnPrueba.Click += new System.EventHandler(this.button1_Click);
             // 
-            // listBox1
+            // lbxVer
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(30, 30);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(203, 244);
-            this.listBox1.TabIndex = 1;
+            this.lbxVer.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxVer.FormattingEnabled = true;
+            this.lbxVer.ItemHeight = 18;
+            this.lbxVer.Location = new System.Drawing.Point(13, 14);
+            this.lbxVer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lbxVer.Name = "lbxVer";
+            this.lbxVer.Size = new System.Drawing.Size(317, 238);
+            this.lbxVer.TabIndex = 1;
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 308);
-            this.Controls.Add(this.listBox1);
+            this.ClientSize = new System.Drawing.Size(480, 257);
+            this.Controls.Add(this.lbxVer);
             this.Controls.Add(this.btnPrueba);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormPrincipal";
             this.Text = "Ejercico 2";
@@ -71,7 +73,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnPrueba;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbxVer;
     }
 }
 

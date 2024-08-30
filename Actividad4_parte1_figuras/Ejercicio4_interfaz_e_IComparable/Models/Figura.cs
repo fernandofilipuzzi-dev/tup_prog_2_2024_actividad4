@@ -1,12 +1,12 @@
 ﻿using System;
 
-
 namespace Ejercicio4.Models
 {
     abstract class Figura:IFigura, IComparable
     {
         abstract public double CalcularArea();
-       
+        abstract public double CalcularPerimetro();
+
         public int CompareTo(object obj)
         {
             int result = 1;
@@ -17,6 +17,5 @@ namespace Ejercicio4.Models
             }
             return result;
         }
-        
     }
 }

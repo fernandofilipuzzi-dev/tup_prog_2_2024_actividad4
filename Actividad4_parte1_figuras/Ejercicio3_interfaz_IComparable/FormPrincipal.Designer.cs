@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.btnPrueba = new System.Windows.Forms.Button();
-            this.lbResultados = new System.Windows.Forms.ListBox();
+            this.lbxVer = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnPrueba
             // 
             this.btnPrueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrueba.Location = new System.Drawing.Point(236, 205);
+            this.btnPrueba.Location = new System.Drawing.Point(480, 227);
             this.btnPrueba.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPrueba.Name = "btnPrueba";
             this.btnPrueba.Size = new System.Drawing.Size(79, 60);
@@ -44,23 +44,23 @@
             this.btnPrueba.UseVisualStyleBackColor = true;
             this.btnPrueba.Click += new System.EventHandler(this.btnPrueba_Click);
             // 
-            // lbResultados
+            // lbxVer
             // 
-            this.lbResultados.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbResultados.FormattingEnabled = true;
-            this.lbResultados.ItemHeight = 16;
-            this.lbResultados.Location = new System.Drawing.Point(18, 18);
-            this.lbResultados.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.lbResultados.Name = "lbResultados";
-            this.lbResultados.Size = new System.Drawing.Size(210, 452);
-            this.lbResultados.TabIndex = 1;
+            this.lbxVer.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxVer.FormattingEnabled = true;
+            this.lbxVer.ItemHeight = 18;
+            this.lbxVer.Location = new System.Drawing.Point(13, 14);
+            this.lbxVer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lbxVer.Name = "lbxVer";
+            this.lbxVer.Size = new System.Drawing.Size(459, 490);
+            this.lbxVer.TabIndex = 1;
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(321, 479);
-            this.Controls.Add(this.lbResultados);
+            this.ClientSize = new System.Drawing.Size(572, 521);
+            this.Controls.Add(this.lbxVer);
             this.Controls.Add(this.btnPrueba);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -75,7 +75,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnPrueba;
-        private System.Windows.Forms.ListBox lbResultados;
+        private System.Windows.Forms.ListBox lbxVer;
     }
 }
 
