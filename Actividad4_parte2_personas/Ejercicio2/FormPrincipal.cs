@@ -25,29 +25,41 @@ namespace Ejercicio2
 
         private void btnVerAltaPersona_Click(object sender, EventArgs e)
         {
-            int dni = Convert.ToInt32(tbDNIBusqueda.Text);
-
-            lista.Sort();
-            int idx = lista.BinarySearch(new Persona(dni));
-
-            Persona p = null;
-            if (idx < 0)
+            if (string.IsNullOrEmpty(tbDNIBusqueda.Text.Trim()) == false)
             {
-                FormDatos fDatos = new FormDatos();
-                fDatos.tbDNI.Text = dni.ToString();
 
-                if (fDatos.ShowDialog() == DialogResult.OK)
+                int dni = Convert.ToInt32(tbDNIBusqueda.Text);
+
+                lista.Sort();
+                int idx = lista.BinarySearch(new Persona(dni));
+
+                Persona p = null;
+                if (idx < 0)
                 {
-                    string nombre = fDatos.tbNombre.Text;
-                    p = new Persona(dni, nombre);
-                    lista.Add(p);
-                }
-            }else
-            {
-                p = lista[idx] as Persona;
-            }
+                    FormDatos fDatos = new FormDatos();
+                    fDatos.tbDNI.Text = dni.ToString();
 
-            tvVer.Text = p.ToString();
+                    if (fDatos.ShowDialog() == DialogResult.OK)
+                    {
+                        string nombre = fDatos.tbNombre.Text;
+                        p = new Persona(dni, nombre);
+                        lista.Add(p);
+                    }
+                }
+                else
+                {
+                    p = lista[idx] as Persona;
+                }
+
+                if (p != null)
+                    tvVer.Text = p.ToString();
+                else
+                    tvVer.Clear();
+            }
+            else
+            {
+                tvVer.Text = "Debe ingresar un DNI!";
+            }
         }
     }
 }

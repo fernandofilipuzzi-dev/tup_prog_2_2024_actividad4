@@ -1,4 +1,5 @@
-﻿namespace Ejercicio4.Models
+﻿
+namespace Ejercicio4.Models
 {
     public class Rectangulo:Figura
     {

@@ -1,8 +1,4 @@
-﻿
-
-using System;
-
-namespace Ejercicio2.Models
+﻿namespace Ejercicio2.Models
 {
     class Cuadrado : Rectangulo
     {

@@ -6,7 +6,7 @@ namespace Ejercicio4.Models
     {
         abstract public double CalcularArea();
 
-        abstract public double CalcularPerimetro();
+       abstract public double CalcularPerimetro();
 
         public int CompareTo(object obj)
         {
