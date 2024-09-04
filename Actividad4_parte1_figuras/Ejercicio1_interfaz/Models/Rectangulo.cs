@@ -25,7 +25,5 @@ namespace Ejercicio1.Models
         {
             return $"Rectangulo - {CalcularArea():f2} - {CalcularPerimetro():f2}";
         }
-
-       
     }
 }

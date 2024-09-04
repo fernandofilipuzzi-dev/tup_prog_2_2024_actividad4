@@ -33,10 +33,14 @@ namespace Ejercicio3.Models
             IFigura fig = obj as IFigura;
             if (fig != null)
             {
-                return this.CalcularArea().CompareTo(fig.CalcularArea());
+                double areaEsta = this.CalcularArea();
+                double areaFig = fig.CalcularArea();
+                return areaEsta.CompareTo(areaFig);
+
+                //de forma equivalente
+                //return this.CalcularArea().CompareTo(fig.CalcularArea());
             }
             return 1;
         }
-
     }
 }
