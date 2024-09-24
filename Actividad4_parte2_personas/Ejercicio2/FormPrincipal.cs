@@ -1,12 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ejercicio2.Models;
 
@@ -27,7 +20,6 @@ namespace Ejercicio2
         {
             if (string.IsNullOrEmpty(tbDNIBusqueda.Text.Trim()) == false)
             {
-
                 int dni = Convert.ToInt32(tbDNIBusqueda.Text);
 
                 lista.Sort();
@@ -36,6 +28,7 @@ namespace Ejercicio2
                 Persona p = null;
                 if (idx < 0)
                 {
+                    #region si no lo encuentra , solicita al usuario crearlo
                     FormDatos fDatos = new FormDatos();
                     fDatos.tbDNI.Text = dni.ToString();
 
@@ -45,10 +38,13 @@ namespace Ejercicio2
                         p = new Persona(dni, nombre);
                         lista.Add(p);
                     }
+                    #endregion
                 }
                 else
                 {
+                    #region si lo encuentra lo selecciona
                     p = lista[idx] as Persona;
+                    #endregion
                 }
 
                 if (p != null)
